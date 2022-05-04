@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # parse the .wav file into frequency and time arrays
-samplerate, data = read('./data/CantinaBand3.wav')
+samplerate, data = read('./data/output.wav')
 duration = len(data)/samplerate
 time = np.arange(0,duration,1/samplerate)
 
@@ -11,5 +11,5 @@ time = np.arange(0,duration,1/samplerate)
 plt.plot(time,data)
 plt.xlabel('Time [s]')
 plt.ylabel('Amplitude')
-plt.title('CantinaBand3.wav')
+plt.title('output.wav')
 plt.show()
